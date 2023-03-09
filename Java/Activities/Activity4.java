@@ -1,8 +1,9 @@
-package Activities;
-    import java.util.Arrays;
+package activities;
 
-    class Activity4 {
-        static void ascendingSort(int array[]) {
+import java.util.Arrays;
+
+public class Activity4 {
+        static void ascendingSort(int[] array) {
             int size = array.length, i;
 
             for (i = 1; i < size; i++) {
@@ -16,12 +17,10 @@ package Activities;
                 array[j + 1] = key;
             }
         }
-
-        public static void main(String args[]) {
-            int[] data = { 9, 5, 1, 4, 3 };
+        public static void main(String[] args) {
+            int[] data = { 4, 2, 10, 3, 12, 1, 5, 6 };
             ascendingSort(data);
             System.out.println("Sorted Array in Ascending Order: ");
             System.out.println(Arrays.toString(data));
         }
-
 }

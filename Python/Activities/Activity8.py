@@ -1,14 +1,9 @@
-# Given list of numbers
-numList = [10, 20, 30, 40, 10]
-print("Given list is ", numList)
+numbers = list(input("Enter numbers: ").split(","))
 
-# Get first element in list
-firstElement = numList[0]
-# Get last element in list
-lastElement = numList[-1]
+firstElement = numbers[0]
+lastElement = numbers[-1]
 
-# Check if first and last element are equal
-if (firstElement == lastElement):
+if(firstElement == lastElement):
     print(True)
 else:
     print(False)

@@ -1,4 +1,7 @@
+from re import X
+
+
 try:
-    print(x)
+    print(X)
 except NameError:
-    print("x hasn't been defined yet.")
+    print("X is not defined")

@@ -1,7 +1,7 @@
-package Activities;
+package activities;
 
-    class Activity3 {
-        public static void main(String args[]) {
+public class Activity3 {
+        public static void main(String[] args) {
             double seconds = 1000000000;
 
             double EarthSeconds = 31557600;
@@ -22,5 +22,4 @@ package Activities;
             System.out.println("Age on Uranus: " + seconds / EarthSeconds / UranusSeconds);
             System.out.println("Age on Neptune: " + seconds / EarthSeconds / NeptuneSeconds);
         }
-
 }

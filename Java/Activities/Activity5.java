@@ -1,36 +1,22 @@
-package Activities;
+package activities;
 
-
-    abstract class Book {
-        String title;
-        //Abstract method
-        abstract void setTitle(String s);
-
-        //Concrete method
-        String getTitle() {
-            return title;
-        }
+public class Activity5 {
+    public static void main(String[] args){
+        String title = "Cricket is life";
+        Book newnovel = new myBook();
+        newnovel.setTitle(title);
+        System.out.println("The title is: "+ newnovel.getTitle());
     }
-
-    class MyBook extends Book {
-        //Define abstract method
-        public void setTitle(String s) {
-            title = s;
-        }
+}
+abstract class Book{
+    String title;
+    abstract void setTitle(String s);
+    String getTitle(){
+        return title;
     }
-
-    public class Activity5 {
-
-        public static void main(String []args) {
-            //Initialize title of the book
-            String title = "Hover Car Racer";
-            //Create object for MyBook
-            Book newNovel = new MyBook();
-            //Set title
-            newNovel.setTitle(title);
-
-            //Print result
-            System.out.println("The title is: " + newNovel.getTitle());
-        }
-
+}
+class myBook extends Book{
+    public void setTitle(String s){
+        title=s;
+    }
 }

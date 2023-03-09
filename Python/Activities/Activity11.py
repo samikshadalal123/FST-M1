@@ -1,13 +1,13 @@
 fruit_shop = {
     "apple": 10,
     "banana": 15,
-    "orange": 8,
-    "peaches": 15
+    "orange": 20,
+    "watermelon": 12
 }
 
-key_to_check = input("What are you looking for? ").lower()
+fruit_available = input("what are you looking for? ").lower()
 
-if(key_to_check in fruit_shop):
-    print("Yes, this is available")
+if(fruit_available in fruit_shop):
+    print("yes, fruit is available")
 else:
-    print("No, this is not available")
+    print("No, fruit is not availabe")

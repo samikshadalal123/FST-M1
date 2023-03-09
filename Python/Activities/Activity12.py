@@ -1,13 +1,7 @@
-# Define function to calculate sum
 def calculateSum(num):
-  if num:
-    # Recursive function call
-    return num + calculateSum(num-1)
-  else:
-    return 0
-
-# Call calculateSum() function
-res = calculateSum(10)
-
-# Print result
-print(res)
+    if num:
+        return num + calculateSum(num-1)
+    else:
+        return 0
+result = calculateSum(10)
+print(result)

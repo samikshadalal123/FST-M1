@@ -1,24 +1,17 @@
-# Given lists
-listOne = [10, 20, 23, 11, 17]
-listTwo = [13, 43, 24, 36, 12]
+listone = [20,33,40,55,60]
+listtwo = [45,22,78,54,11]
 
-# Print the lists
-print("First List ", listOne)
-print("Second List ", listTwo)
+print("First List= ", listone)
+print("Second List= ", listtwo)
 
-# Declare a third list that will contain the result
-thirdList = []
+thirdlist = []
 
-# Iterate through first list to get odd elements
-for num in listOne:
-    if (num % 2 != 0):
-        thirdList.append(num)
-        
-# Iterate through first list to get even elements
-for num in listTwo:
-    if (num % 2 == 0):
-        thirdList.append(num)
+for num in listone:
+    if(num % 2 != 0):
+        thirdlist.append(num)
 
-# Print result
-print("result List is:")
-print(thirdList)
+for num in listtwo:
+    if(num % 2 == 0):
+        thirdlist.append(num)
+
+print("The list is: ",thirdlist)        

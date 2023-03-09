@@ -4,11 +4,11 @@ def fibonacci(number):
     else:
         return(fibonacci(number-1) + fibonacci(number-2))
 
-nterms = int(input("Enter a number: "))
+n = int(input("Enter a number: "))
 
-if nterms <= 0:
+if n <= 0:
     print("Please enter a positive number")
 else:
-    print("Fibonacci Sequence: ")
-    for i in range(nterms):
+    print("Fibonacci Sequence of "+ str(n) + " is:")
+    for i in range(n):
         print(fibonacci(i))
